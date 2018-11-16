@@ -1,0 +1,143 @@
+@font-face { /* For Inkling Font */
+    font-family: woomy;
+    src: url(font/Paintball_Beta.otf);
+}
+
+* {
+    font-family: woomy;
+    /*border: 1px solid brown; */
+}
+
+#root, html, body, .blox {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#root, html, body {
+    background: rgb(238, 238, 238);
+}
+
+#header {
+    display: inline-flex;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0,0,0,1);
+}
+
+#header > * {
+    color: white;
+}
+
+#titleStuff {
+    display: inline-flex;
+    height: 100%;
+    width: auto;
+}
+
+#pageTitle {
+    letter-spacing: 0.2rem;
+    margin: 0;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.pageLogo > img {
+    height: 100%;
+}
+
+#category {
+    height: 100%;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
+#header-itemHolder {
+    display: inline-flex;
+    width: -webkit-fill-available;
+    justify-content: space-evenly;
+}
+.items {
+    margin: auto;
+}
+
+/* start of header stuff */
+
+#mainContainer {
+    width: 100%;
+    height: 300%;
+}
+
+#dailyReport {
+    display: inline-flex;
+    background-image: url('./images/incident_backdrop.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#ReportOptions {
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+}
+
+.reportp {
+    font-size: 1.7rem;
+}
+
+.column,#reportPic {
+    height: 100%;
+    width: 50%;
+}
+
+.column {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#reportPic {
+    background-image: url(./images/temp_island.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* end of the report stuff */
+
+/* start of map stuff */
+
+#map {
+    width: 50%;
+    height: 50%;
+    margin: 1rem auto;
+}
+
+.slogan {
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.redirect {
+    border: none;
+    display: table;
+    margin: 2rem auto 0 auto;
+    padding: 1rem 2rem;
+    color: whitesmoke;
+    background-color: #5ED4FF;
+    border-radius: 2%;
+}
+
+#cameraCase {
+    display: inline;
+    height: 25%;
+    width: 100%;
+}
+
+/* gay link color */
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
